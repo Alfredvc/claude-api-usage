@@ -3,13 +3,13 @@ name: extract-conversations
 description: Extract structured conversation metadata from Claude Code logs for process improvement analysis. Use when the user wants to analyze collaboration patterns, find failure modes, review skill usage, or improve their workflow with Claude.
 user-invocable: true
 argument-hint: [project_dir]
-allowed-tools: Bash, Read, Grep, Glob
+allowed-tools: Bash(python3 *), Bash(jq *), Read, Grep, Glob
 ---
 
 Extract conversation data and save to a temporary file for analysis:
 
 ```bash
-python3 ~/.claude/skills/extract-conversations/extract_session_data.py [project_dir] > /tmp/conversations.json
+python3 scripts/extract_session_data.py [project_dir] > /tmp/conversations.json
 ```
 
 The output is JSON structured as: conversations → sessions → turns, including:
