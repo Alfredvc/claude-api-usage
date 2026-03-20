@@ -1,4 +1,4 @@
-# claude-metadata
+# claude-meta
 
 ## Understanding how you interact with Claude — and how Claude performs
 
@@ -27,7 +27,7 @@ Requires Python 3.10+ and Claude Code 1.0.33+.
 ### From marketplace
 
 ```sh
-/plugin install claude-api-usage
+/plugin install claude-meta
 ```
 
 ### Local development
@@ -35,17 +35,17 @@ Requires Python 3.10+ and Claude Code 1.0.33+.
 Register as a local marketplace, install, then symlink for live editing:
 
 ```sh
-claude plugin marketplace add /path/to/claude-metadata
-claude plugin install claude-api-usage@claude-api-usage
+claude plugin marketplace add /path/to/claude-meta
+claude plugin install claude-meta@claude-meta
 
 # Replace cache with symlink to source
-rm -rf ~/.claude/plugins/cache/claude-api-usage/claude-api-usage/1.0.0
-ln -s /path/to/claude-metadata ~/.claude/plugins/cache/claude-api-usage/claude-api-usage/1.0.0
+rm -rf ~/.claude/plugins/cache/claude-meta/claude-meta/1.0.0
+ln -s /path/to/claude-meta ~/.claude/plugins/cache/claude-meta/claude-meta/1.0.0
 ```
 
 Skills are namespaced under the plugin:
-- `claude-api-usage:api-usage`
-- `claude-api-usage:extract-conversations`
+- `claude-meta:api-usage`
+- `claude-meta:extract-conversations`
 
 ---
 

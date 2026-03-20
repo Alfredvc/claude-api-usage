@@ -1,5 +1,5 @@
 {
-  "name": "claude-api-usage",
+  "name": "claude-meta",
   "version": "1.0.0",
   "description": "Claude Code usage analysis and conversation extraction tools",
   "owner": {
@@ -8,7 +8,7 @@
   },
   "plugins": [
     {
-      "name": "claude-api-usage",
+      "name": "claude-meta",
       "source": "./",
       "description": "Analyze Claude Code token usage, costs, and conversation workflows"
     }
